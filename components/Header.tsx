@@ -26,7 +26,7 @@ export default function Header() {
                         <Image src="/logo.svg" alt="Soodio" width={199} height={52} />
                     </Link>
                     </div>
-                    <div className="flex flex-row py-3 rounded-[45px] bg-[#1E50FF36] justify-between px-7">
+                    <div className="flex flex-col gap-5 lg:flex-row py-3 rounded-[45px] bg-[#1E50FF36] justify-between px-7">
                         <Link href="/" className={`${pathname === '/' ? 'text-[#819DF5]' : 'text-white'} font-bold font-poppins font-[15px] px-7`}>HOME</Link>
                         <Link href="/explore" className={`${pathname === '/explore' ? 'text-[#819DF5]' : 'text-white'} font-bold font-poppins font-[15px] px-7`}>LIBRARIES</Link>
                         <Link href="/models" className={`${pathname === '/models' ? 'text-[#819DF5]' : 'text-white'} font-bold font-poppins font-[15px] px-7`}>MARKETPLACE</Link>
