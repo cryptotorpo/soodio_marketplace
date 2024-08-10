@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(180deg, #000A14 0%, #010840 50%, #062980 75%, #597EFF 100%);
+}
+
+.box-gradient {
+  background: linear-gradient(174.36deg, rgba(129, 157, 245, 0.5) -3.1%, rgba(74, 89, 255, 0) 54.17%, #819DF5 111.45%);
+}
+
+.box-gradient2 {
+  background: linear-gradient(3.86deg, rgba(129, 157, 245, 0.21) -218.04%, rgba(75, 92, 143, 0.21) 247.06%);
+}
+
+.box-gradient3 {
+  background: linear-gradient(179.04deg, rgba(129, 157, 245, 0.5) -8.12%, rgba(82, 99, 254, 0.0724002) 35.84%, rgba(76, 92, 255, 0.0197455) 48.45%, rgba(74, 89, 255, 0) 56.39%, rgba(75, 90, 255, 0.00658184) 61.06%, #819DF5 115.05%);
+}
+
+.time-gradient {
+  background: -webkit-linear-gradient(90deg, rgba(129, 157, 245, 0.53) 0%, #597EFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-border-gradient {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.textarea-gradient {
+  background: linear-gradient(180deg, rgba(129, 157, 245, 0.5) 0%, rgba(74, 89, 255, 0) 50%, #819DF5 100%);
+}
+
+.button-gradient {
+  background: linear-gradient(180deg, rgba(129, 157, 245, 0.5) 0%, rgba(74, 89, 255, 0) 50%, #819DF5 100%);
+}
+
+.connect-button {
+  box-shadow: 8px -12px 28px 15px #343a4d
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #708de7;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b5ab4;
+}
