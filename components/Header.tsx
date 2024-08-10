@@ -41,7 +41,7 @@ export default function Header() {
               <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
             </DisclosureButton>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Your Company"
@@ -67,14 +67,13 @@ export default function Header() {
                 ))}
               </div>
             </div>
-          </div>
-          <div className="lg:block hidden absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="hidden absolute inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <div className="flex flex-row relative items-center">
                 <button
                     className="flex flex-row items-center py-3 px-7 h-[51px] rounded-[45px] border-[#819DF5] border-2 border-solid mr-3"
                     onClick={() => toggleCreateMenu(!isShowCreateMenu)}
                 >
-                    <span className="font-poppins font-bold font-[15px] text-white mr-2">CREATE</span>
+                    <span className="font-poppins font-bold text-white mr-2">CREATE</span>
                     <Image src="/images/microphone.svg" alt="" width={10.91} height={15} />
                 </button>
                 <div
@@ -92,14 +91,16 @@ export default function Header() {
                         </button>
                         :
                         <button
-                            className="rounded-[45px] text-white font-poppins font-[15px] font-bold bg-[#819DF5] connect-button py-3 px-7"
+                            className="rounded-[45px] text-white font-poppins font-bold bg-[#819DF5] connect-button py-3 px-7"
                             onClick={gotoLogin}
                         >
                             Login
                         </button>
                 }
             </div>
+            </div>
           </div>
+
         </div>
       </div>
 
