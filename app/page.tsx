@@ -18,9 +18,9 @@ export default function Home() {
         <Image className="lg:block hidden absolute -bottom-32 left-36" src="/images/m3.svg" alt="" width={32} height={32} />
         <Image className="lg:block hidden absolute -bottom-40 right-72" src="/images/m4.svg" alt="" width={32} height={32} />
         <Image className="lg:block hidden absolute top-1 right-72" src="/images/m1.svg" alt="" width={32} height={32} /> */}
-        <span className="font-poppins font-bold lg:text-[80px] text-[30px] text-white lg:leading-[80px] leading-[30px]">AI AUDIO SAMPLES</span>
+        <span className="font-poppins font-bold lg:text-[80px] text-[27px] text-white leading-[30px]">AI AUDIO SAMPLES</span>
       </div>
-      <div className="relative px-14 font-poppins font-bold lg:text-[80px] text-[30px] text-white text-center lg:leading-[80px] leading-[30px]">
+      <div className="relative px-0 lg:px-14 font-poppins font-bold lg:text-[80px] text-[25px] text-white text-center lg:leading-[80px] leading-[30px]">
         ON DEMAND!
         <Image src="/images/hand.svg" alt="" width={150} height={121} className="absolute -top-[10px] -right-[100px] lg:block hidden" />
       </div>

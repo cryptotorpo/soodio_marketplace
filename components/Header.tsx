@@ -46,8 +46,8 @@ export default function Header() {
               <img
                 alt="Your Company"
                 src="/logo.svg"
-                width={199} height={52}
-                // className="h-8 w-auto"
+                // width={199} height={52}
+                className="h-8 w-auto"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block bg-[#1E50FF36] lg:flex justify-center items-center rounded-full">
@@ -67,40 +67,39 @@ export default function Header() {
                 ))}
               </div>
             </div>
-            <div className="hidden absolute inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <div className="flex flex-row relative items-center">
-                <button
-                    className="flex flex-row items-center py-3 px-7 h-[51px] rounded-[45px] border-[#819DF5] border-2 border-solid mr-3"
-                    onClick={() => toggleCreateMenu(!isShowCreateMenu)}
-                >
-                    <span className="font-poppins font-bold text-white mr-2">CREATE</span>
-                    <Image src="/images/microphone.svg" alt="" width={10.91} height={15} />
-                </button>
-                <div
-                    className={`absolute bg-[#819DF5] px-3 flex flex-col rounded-[7px] top-14 min-w-[175px] z-[999999] ${isShowCreateMenu ? 'visible' : 'invisible'}`}
-                    onMouseLeave={() => toggleCreateMenu(false)}
-                >
-                    <Link className="text-center py-3 text-white border-solid border-b-[0.25px] border-white" href={'/mint-collection'}>LIBRARY</Link>
-                    <Link className="text-center py-3 text-white border-solid border-b-[0.25px] border-white" href={'/create-sound'}>SOUNDS</Link>
-                    <Link className="text-center py-3 text-white" href={'/mint'}>NFT</Link>
+            <div className="top-20 lg:top-0 absolute inset-y-0 right-0 lg:flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div className="flex flex-row relative items-center">
+                    <button
+                        className="flex flex-row items-center py-2 lg:py-3 px-5 lg:px-7 h-[51px] rounded-full border-[#819DF5] border-2 border-solid mr-3"
+                        onClick={() => toggleCreateMenu(!isShowCreateMenu)}
+                    >
+                        <span className="font-poppins font-bold text-white mr-2">CREATE</span>
+                        <Image src="/images/microphone.svg" alt="" width={10.91} height={15} />
+                    </button>
+                    <div
+                        className={`absolute bg-[#819DF5] px-3 flex flex-col rounded-[7px] top-14 min-w-[175px] z-[999999] ${isShowCreateMenu ? 'visible' : 'invisible'}`}
+                        onMouseLeave={() => toggleCreateMenu(false)}
+                    >
+                        <Link className="text-center py-3 text-white border-solid border-b-[0.25px] border-white" href={'/mint-collection'}>LIBRARY</Link>
+                        <Link className="text-center py-3 text-white border-solid border-b-[0.25px] border-white" href={'/create-sound'}>SOUNDS</Link>
+                        <Link className="text-center py-3 text-white" href={'/mint'}>NFT</Link>
+                    </div>
+                    {
+                        pathname === '/' ?
+                            <button onClick={gotoProfile}>
+                                <Image src="/images/user.svg" alt="" width={50} height={50} />
+                            </button>
+                            :
+                            <button
+                                className="rounded-[45px] text-white font-poppins font-bold bg-[#819DF5] connect-button py-3 px-7"
+                                onClick={gotoLogin}
+                            >
+                                Login
+                            </button>
+                    }
                 </div>
-                {
-                    pathname === '/' ?
-                        <button onClick={gotoProfile}>
-                            <Image src="/images/user.svg" alt="" width={50} height={50} />
-                        </button>
-                        :
-                        <button
-                            className="rounded-[45px] text-white font-poppins font-bold bg-[#819DF5] connect-button py-3 px-7"
-                            onClick={gotoLogin}
-                        >
-                            Login
-                        </button>
-                }
-            </div>
             </div>
           </div>
-
         </div>
       </div>
 
