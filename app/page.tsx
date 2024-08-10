@@ -24,7 +24,7 @@ export default function Home() {
         ON DEMAND!
         <Image src="/images/hand.svg" alt="" width={150} height={121} className="absolute -top-[10px] -right-[100px] lg:block hidden" />
       </div>
-      <div className="font-poppins font-normal lg:text-[29px] text-[18px] text-[#819DF5] w-full text-center pb-14">
+      <div className="font-poppins font-normal lg:text-[29px] text-[18px] text-[#819DF5] w-full text-center pb-14 lg:pt-0 pt-10">
         UNLEASH YOUR CREATIVITY THROUGH SOUND
       </div>
       <div className="w-full text-center">

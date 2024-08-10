@@ -5,7 +5,7 @@ export default function Profile() {
     const collections = ['collection1', 'collection2', 'collection3', 'collection4', 'collection5', 'collection6']
     return (
         <div className="mx-auto pt-12 pb-12 w-full">
-            <div className="flex flex-row items-center justify-center lg:max-w-[800px] w-full mx-auto">
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:max-w-[800px] w-full mx-auto">
                 <div className="flex-auto w-32">
                     <Image src="/images/profile.svg" width={239} height={250} alt="" />
                     <div className="flex flex-row items-center pt-3">
@@ -15,7 +15,7 @@ export default function Profile() {
                         </button>
                     </div>
                 </div>
-                <div className="flex-auto w-64">
+                <div className="flex-auto w-64 lg:mt-0 mt-10">
                     <div className="flex flex-row py-2">
                         <span className="flex-1 font-poppins font-bold text-[20px] text-white text-left">User Name:</span>
                         <span className="flex-1 font-poppins font-normal text-[18px] text-white text-left">Soodio</span>
@@ -32,7 +32,7 @@ export default function Profile() {
                     </div>
                 </div>
             </div>
-            <div className="font-poppins font-extrabold lg:text-[30px] text-[25px] text-white w-full text-left pt-32 pb-12">
+            <div className="font-poppins font-extrabold lg:text-[30px] text-[25px] text-white w-full text-left pt-10 lg:pt-32 pb-12">
                 NFT SOUND LIBRARY
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 flex-wrap lg:gap-10 gap-5">

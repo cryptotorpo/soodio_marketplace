@@ -19,11 +19,13 @@ export default function Header() {
 
     return (
         <>
-            <div className="lg:block hidden">
-                <div className="bg-[transparent] py-10 flex flex-row items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full justify-between">
+            <div className="lg:block">
+                <div className="bg-[transparent] py-10 flex flex-col gap-y-12 lg:gap-0 lg:flex-row items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full justify-between">
+                    <div>
                     <Link href="/">
                         <Image src="/logo.svg" alt="Soodio" width={199} height={52} />
                     </Link>
+                    </div>
                     <div className="flex flex-row py-3 rounded-[45px] bg-[#1E50FF36] justify-between px-7">
                         <Link href="/" className={`${pathname === '/' ? 'text-[#819DF5]' : 'text-white'} font-bold font-poppins font-[15px] px-7`}>HOME</Link>
                         <Link href="/explore" className={`${pathname === '/explore' ? 'text-[#819DF5]' : 'text-white'} font-bold font-poppins font-[15px] px-7`}>LIBRARIES</Link>

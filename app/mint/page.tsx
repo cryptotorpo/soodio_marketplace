@@ -4,7 +4,7 @@ export default function Mint() {
     return (
         <div className="flex flex-row">
             <div className="flex-auto w-64">
-                <div className="font-poppins font-bold lg:text-[30px] text-[25px] text-white w-full text-left pt-28 pb-9">
+                <div className="font-poppins font-bold lg:text-[30px] text-[25px] text-white w-full text-left pt-14 pb-9">
                     Mint Sound
                 </div>
                 <div className="text-left text-white font-bold font-poppins lg:text-[20px] text-[15px]">Title</div>

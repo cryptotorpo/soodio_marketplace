@@ -37,7 +37,7 @@ export default function Mint() {
     ]
     return (
         <div>
-            <div className="font-poppins font-bold lg:text-[30px] text-[25px] text-white w-full text-left pt-28 pb-5">
+            <div className="font-poppins font-bold lg:text-[30px] text-[25px] text-white w-full text-left pt-14 pb-5">
                 Create a Sound
             </div>
             <div className="flex lg:flex-row flex-col justify-start">
